@@ -9,14 +9,12 @@ These are:
 * "react-test-renderer"
 
 Together with react-native-scripts a set of scripts is installed:
+* start: "react-native-scripts start",
+* eject: "react-native-scripts eject",
+* android: "react-native-scripts android",
+* ios: "react-native-scripts ios",
+* test: "node node_modules/jest/bin/jest.js"
 
-"scripts": {
-    "start": "react-native-scripts start",
-    "eject": "react-native-scripts eject",
-    "android": "react-native-scripts android",
-    "ios": "react-native-scripts ios",
-    "test": "node node_modules/jest/bin/jest.js"
-}
 
 React-native-scripts discussion
 The package react-native-scripts use expo differently than the expo native commands.
