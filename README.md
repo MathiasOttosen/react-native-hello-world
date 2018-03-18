@@ -1,7 +1,7 @@
 # react-native-hello-world 
 A test project to see the differences between the "exp init <app-name>" command and the "create-react-native-app <app-name>" command.
 
-Run down:
+## Run down
 The CRNA app init creates contains a set of devDependencies which is not included in exp init.
 These are: 
 * "react-native-scripts"
@@ -16,7 +16,7 @@ Together with react-native-scripts a set of scripts is installed:
 * test: "node node_modules/jest/bin/jest.js"
 
 
-React-native-scripts discussion
+## React-native-scripts discussion
 The package react-native-scripts use expo differently than the expo native commands.
 The major differences are local vs hosted project sharing.
 
