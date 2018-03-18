@@ -7,7 +7,9 @@ These are:
 * "react-native-scripts"
 * "jest-expo"
 * "react-test-renderer"
+
 Together with react-native-scripts a set of scripts is installed:
+
 "scripts": {
     "start": "react-native-scripts start",
     "eject": "react-native-scripts eject",
