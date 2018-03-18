@@ -37,8 +37,11 @@ The Expo app init adds a set of descriptive attributes and a set of settings in 
     }
   }
 ```
+The Expo version of the app.json file automatically setups up some settings for when we are developing apps which are nice to have at the start of a project.
+In addition there are references to 2 .png files in an asset folder. This asset folder is only added with the expo init.
+Something to note is that by setting "expo":"splash" a nice splash screen is added during development which is kinda nice.
 
-In contrast, CRNA only sets up sdkVersion:
+In contrast, CRNA only sets up sdkVersion with no splash or assets folder to boot:
 ```
 "expo": {
     "sdkVersion": "25.0.0"
