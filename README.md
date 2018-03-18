@@ -15,7 +15,35 @@ Together with react-native-scripts a set of scripts is installed:
 * ios: "react-native-scripts ios",
 * test: "node node_modules/jest/bin/jest.js"
 
+The Expo app init adds a set of descriptive attributes and a set of settings in the app.json file:
+```
+"expo": {
+    "name": "hello-world",
+    "description": "This project is really great.",
+    "slug": "hello-world",
+    "privacy": "public",
+    "sdkVersion": "25.0.0",
+    "platforms": ["ios", "android"],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    }
+  }
+```
 
+In contrast, CRNA only sets up sdkVersion:
+```
+"expo": {
+    "sdkVersion": "25.0.0"
+  }
+```
 ## React-native-scripts discussion
 The package react-native-scripts use expo differently than the expo native commands.
 The major differences are local vs hosted project sharing.
