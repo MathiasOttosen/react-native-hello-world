@@ -1,0 +1,14 @@
+Android emulator (via android sdk) and docker cannot run simultaniously
+
+Reason:
+	avds use HAXM virtualization
+	docker use Hyper-v virtualization
+Both cannot run at the same time (as of 25-03-2018)
+Thus for android development the Hyper-v should be turned off and for docker hosting hyper-v should be turned on.
+To do so:
+    For turning off:
+	Open an CMD with admin privs => use command "bcdedit /set {current} hypervisorlaunchtype off" to turn off hyper-v.
+    For turning on:
+	Open an CMD with admin privs => use command "bcdedit /set {current} hypervisorlaunchtype auto" to turn on hyper-v.
+
+NOTICE: when switching settings in bcdedit, the computer needs to be restart for settings to take effect. (this is due to hyper-v being enabled/disabled on boot.

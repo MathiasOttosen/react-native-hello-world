@@ -47,6 +47,15 @@ class Greetings extends Component {
 }
 
 class HomeScreen extends React.Component{
+  static navigationOptions = {
+    title: 'Welcome',
+    headerStyle: {
+      height: 1,
+      backgroundColor: '#000000',
+      
+    }
+  }
+
   render() {
     let pic = {
       uri: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'
@@ -85,6 +94,7 @@ class DetailsScreen extends React.Component {
   static navigationOptions = {
     headerStyle: {
       backgroundColor: '#000000',
+      
     }
   }
   render() {
@@ -107,6 +117,9 @@ const RootStack = StackNavigator({
 },
 {
   initialRouteName: 'Home',
+},
+{
+  headerMode: 'screen'
 }
 ); 
 export default class App extends React.Component {

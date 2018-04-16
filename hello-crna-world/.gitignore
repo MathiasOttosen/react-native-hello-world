@@ -12,6 +12,9 @@
 .env.test.local
 .env.production.local
 
+/assets/*.zip
+/assets/*.exe
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
