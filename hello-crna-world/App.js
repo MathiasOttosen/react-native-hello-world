@@ -2,31 +2,31 @@ import React, { Component } from 'react';
 import { AppRegistry, Image, Text, View, Button, Alert, StyleSheet} from 'react-native';
 import { StackNavigator } from 'react-navigation';
 
-class Blink extends Component {  
+class Blink extends Component {
 
   constructor(props){
     super(props);
     this.state = {isShowingText: true};
   }
-  
+
 
   // setInterval(() => {
   //   this.setState(previousState => {
   //     return { isShowingText: !previousState.isShowingText };
   //   });
-  // }, 1000); 
+  // }, 1000);
   _onButtonPressed() {
     // this.setState(previousState => {
     //   return { isShowingText: !previousState.isShowingText };
     // });
   }
-  
+
   render(){
     let display = this.state.isShowingText ? this.props.name : ' ';
-    return ( 
+    return (
       <View style= {{alignItems: 'center'}}>
-        <Button 
-        title = 'Press me' 
+        <Button
+        title = 'Press me ' 
         onPress={() => {
           this.props.navigation.navigate('Details');
           this._onButtonPressed();
@@ -52,7 +52,7 @@ class HomeScreen extends React.Component{
     headerStyle: {
       height: 1,
       backgroundColor: '#000000',
-      
+
     }
   }
 
@@ -69,13 +69,13 @@ class HomeScreen extends React.Component{
           <View style={{alignItems: 'center', height: 110, backgroundColor: 'powderblue'}}>
             <Greetings name='Rexxar' />
           </View>
-            
+
           <View style={{alignItems: 'center', height: 110, backgroundColor: 'skyblue'}}>
-          <Button 
-          title = 'Press me' 
+          <Button
+          title = 'Press me'
           onPress={() => {
             this.props.navigation.navigate('Details');
-            
+
             //Alert.alert("AARRRGGGHHH");
             //this._onButtonPressed();
           }}
@@ -94,14 +94,14 @@ class DetailsScreen extends React.Component {
   static navigationOptions = {
     headerStyle: {
       backgroundColor: '#000000',
-      
+
     }
   }
   render() {
     return (
       <View style= {{borderColor: '#000000', flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#000000'}}>
         <Image source={require('./assets/smile.jpg')}/>
-        
+
       </View>
     );
   }
@@ -121,7 +121,7 @@ const RootStack = StackNavigator({
 {
   headerMode: 'screen'
 }
-); 
+);
 export default class App extends React.Component {
   render() {
     return <RootStack/>;
