@@ -26,7 +26,7 @@ class Blink extends Component {
     return (
       <View style= {{alignItems: 'center'}}>
         <Button
-        title = 'Press me ' 
+        title = 'Press me'
         onPress={() => {
           this.props.navigation.navigate('Details');
           this._onButtonPressed();
